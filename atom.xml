@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2012-04-10T20:35:41+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[test post]]></title>
+    <link href="http://yoursite.com/blog/2012/04/10/test-post/"/>
+    <updated>2012-04-10T20:29:00+08:00</updated>
+    <id>http://yoursite.com/blog/2012/04/10/test-post</id>
+    <content type="html"><![CDATA[<h3>Test</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 配置]]></title>
+    <link href="http://yoursite.com/blog/2012/04/03/ubuntu-pei-zhi/"/>
+    <updated>2012-04-03T20:02:00+08:00</updated>
+    <id>http://yoursite.com/blog/2012/04/03/ubuntu-pei-zhi</id>
+    <content type="html"><![CDATA[<h2>ubuntu 基本调整</h2>
+
+<p>回到传统桌面</p>
+
+<pre><code>sudo apt-get install gnome-session-fallback
+</code></pre>
+
+<p>删除ibus, 安装 fcitx 2012.4.3 v4.2.1, 五笔拼音</p>
+
+<pre><code>sudo apt-get remove ibus
+sudo add-apt-repository ppa:fcitx-team/nightly
+sudo apt-get update
+sudo apt-get install fcitx
+sudo apt-get install fcitx-table-wbpy
+</code></pre>
+
+<hr />
+
+<h2>安装 rvm</h2>
+
+<p>参考<a href="http://www.the-tech-tutorial.com/?p=1868">这篇文章</a></p>
+
+<p>基本的安装库支持</p>
+
+<pre><code>sudo apt-get install build-essential git-core curl libmysqlclient16-dev nodejs
+</code></pre>
+
+<p>安装 rvm</p>
+
+<pre><code>sudo bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+umask g+w
+source /etc/profile.d/rvm.sh
+rvm requirements
+</code></pre>
+
+<p>根据上面显示的ruby安装步骤</p>
+
+<pre><code>sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+</code></pre>
+
+<p>修改所有权</p>
+
+<pre><code>sudo chown -R [user]:[user] /usr/local/rvm  
+</code></pre>
+
+<p>安装 ruby 1.9.2 , 并设置为默认 ruby 版本</p>
+
+<pre><code>ruby install 1.9.2
+source "/usr/local/rvm/scripts/rvm"
+rvm --default use 1.9.2
+</code></pre>
+
+<p>在 .bashrc 末尾添加, 以便每次打开终端时自动运行</p>
+
+<pre><code>source /etc/profile.d/rvm.sh
+</code></pre>
+
+<hr />
+
+<h2>Sublime Text 2</h2>
+
+<p>参考:</p>
+
+<ul>
+<li>Sublime 入门文档<a href="http://lucifr.com/139225/sublime-text-2-tricks-and-tips/#package_control">Lucifr</a></li>
+</ul>
+
+
+<p>下载:</p>
+
+<ul>
+<li><p><a href="http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202%20Build%202190%20x64.tar.bz2">linux 64 开发版</a> 2012.4.3 v2190</p></li>
+<li><p><a href="http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202%20Build%202181%20x64.tar.bz2">linux 64 beta</a> 2012.4.3 v2181</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
